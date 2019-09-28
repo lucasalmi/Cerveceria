@@ -5,3 +5,6 @@ table{
 h3 {
 	color: antiquewhite;
 }
+li {
+	list-style: url(http://icons.iconarchive.com/icons/flat-icons.com/flat/16/Beer-icon.png)
+}

@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Beer} from './beer';
 import {BEERS} from './mocks';
-import { Descripcion } from './descripciones';
-import {DESCRIPTION} from './mocks';
 
 @Component({
   selector: 'app-beer-list',
@@ -30,8 +28,6 @@ export class BeerListComponent implements OnInit {
 
   constructor() { 
   }
-
-  //Beer[a].description = Descripcion [a]
 
   masCerveza (beer){
     beer.stock--;

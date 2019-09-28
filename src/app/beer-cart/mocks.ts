@@ -16,4 +16,4 @@ export const CARRITO: Carrito[] = [
 	price : 100,
 	cantidad :0,
 	total: 0,
-    }];
+}];
