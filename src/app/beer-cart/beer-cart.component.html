@@ -1,0 +1,19 @@
+<h3>Carrito de compra</h3>
+<table class="table table-dark">
+	<thead>
+		<tr>
+		<th scope="col">{{titulos.name}}</th>
+		<th scope="col">{{titulos.price}}</th>
+		<th scope="col">{{titulos.cantidad}}</th>
+		<th scope="col">{{titulos.total}}</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor = "let carro of carrito">
+		<th scope="row">{{carro.name}}</th>
+		<td>{{carro.price | currency}}</td>
+		<td>{{carro.cantidad}}</td>
+		<td><button (click) = "calculartotal(carro)">=</button> {{carro.total | currency}}</td>
+		</tr>
+	</tbody>
+</table>
