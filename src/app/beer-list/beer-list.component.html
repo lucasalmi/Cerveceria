@@ -11,7 +11,7 @@
 			</tr>
 		</thead>
 		<tbody>
-			<tr *ngFor = "let beer of beers">
+			<tr *ngFor = "let beer of beers" [ngClass] = "{'oferta': beer.ofert, 'agotado': beer.stock <= 0}">
 			<th scope="row">{{beer.name}}</th>
 			<td>
 					<ul>
@@ -23,12 +23,13 @@
 					</ul>
 				</td>
 				<td>{{beer.price | currency}}</td>
-				<td><img src="{{beer.imagen}}" alt="{{beer.name}}" width="30%"></td>
+				<td><img [src]=beer.imagen [alt]=beer.name width="30%"></td>
 				<td><span *ngIf = "beer.stock <= 0"> Agotado </span>
-					<span *ngIf = "beer.stock > 0"> Disponible</span>
-				</td>
-				<td *ngIf = "beer.stock > 0">
-				<button (click) = "masCerveza(beer)">+</button></td>
+					<span *ngIf = "beer.stock > 0"> Disponible ({{beer.stock}})</span>
+					<button (click) = "masCerveza(beer)">+</button>
+				<span *ngIf = "beer.stock > 0"><button (click) = "menosCerveza (beer)">-</button></span>
+			</td>
+			<td><input type="number" [(ngModel)] = "beer.stock"></td>
 			</tr>
 		</tbody>
 	</table>

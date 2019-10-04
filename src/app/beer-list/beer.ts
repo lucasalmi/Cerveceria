@@ -8,4 +8,5 @@ export class Beer {
 	public price: number;
 	public imagen: string;
 	public stock: number;
+	public ofert: boolean;
 }

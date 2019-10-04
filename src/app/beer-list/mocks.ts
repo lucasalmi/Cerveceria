@@ -11,6 +11,7 @@ export const BEERS: Beer[] = [
 		price: 110,
 		imagen: 'https://http2.mlstatic.com/caja-x6-cerveza-artesanal-porter-antares-500-ml-12-canillas-D_NQ_NP_692506-MLA31900359222_082019-F.jpg',
 		stock: 10,
+		ofert: true,
 	},{
 		name: 'Barley Wine',
 		alcohol: '10',
@@ -21,6 +22,7 @@ export const BEERS: Beer[] = [
 		price: 130,
 		imagen: 'https://http2.mlstatic.com/cerveza-artesanal-antares-barley-wine-x-und-nunez-D_NQ_NP_768430-MLA31352400657_072019-F.jpg',
 		stock: 20,
+		ofert: false,
 	},{
 		name : 'Honey',
 		alcohol: '7,5',
@@ -31,4 +33,5 @@ export const BEERS: Beer[] = [
 		price : 100,
 		imagen : 'https://http2.mlstatic.com/cerveza-artesanal-antares-honey-x-und-nunez-D_NQ_NP_938260-MLA31131374234_062019-F.jpg',
 		stock: 15,
+		ofert: false,
 	}];

@@ -1,6 +1,13 @@
 table{
 	border: 2px solid;
+	border-color: black;
 	color: antiquewhite;
+}
+.oferta {
+	background-color: green;
+}
+.agotado {
+	background-color: red;
 }
 h3 {
 	color: antiquewhite;

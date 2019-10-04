@@ -24,12 +24,14 @@ export class BeerListComponent implements OnInit {
   };
 
   public beers: Beer [];
-	
 
   constructor() { 
   }
 
   masCerveza (beer){
+    beer.stock++;
+  }
+  menosCerveza (beer){
     beer.stock--;
   }
   
