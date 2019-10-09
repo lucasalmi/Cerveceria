@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Beer} from './beer';
-import {BEERS} from './mocks';
+import {BeerDataService } from '../service/beer-data.service';
 
 @Component({
   selector: 'app-beer-list',
@@ -25,7 +25,8 @@ export class BeerListComponent implements OnInit {
 
   public beers: Beer [];
 
-  constructor() { 
+  constructor(private beerDataService : BeerDataService) {
+
   }
 
   masCerveza (beer){
@@ -34,9 +35,18 @@ export class BeerListComponent implements OnInit {
   menosCerveza (beer){
     beer.stock--;
   }
+  solonumeros (event){
+    if (event.key < "0" || event.key > "9"){
+      event.preventDefault();
+    }
+  }
   
   ngOnInit() {
-  this.beers = BEERS;
-  }
+  this.beerDataService.getBeers().subscribe(response => {this.beers = [];
+     for (const key in response){
+      const element = response[key];
+      this.beers.push(element);}
 
-}
+    });
+  }
+}  

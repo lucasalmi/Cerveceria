@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
@@ -8,6 +9,9 @@ import { BeerListComponent } from './beer-list/beer-list.component';
 import { BeerCartComponent } from './beer-cart/beer-cart.component';
 import { FooterComponent } from './footer/footer.component';
 import {FormsModule} from '@angular/forms';
+import { AboutComponent } from './about/about.component';
+import { ComprasComponent } from './compras/compras.component';
+import { BeerDataService } from './service/beer-data.service';
 
 @NgModule({
   declarations: [
@@ -15,14 +19,17 @@ import {FormsModule} from '@angular/forms';
     NavComponent,
     BeerListComponent,
     BeerCartComponent,
-    FooterComponent
+    FooterComponent,
+    AboutComponent,
+    ComprasComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [BeerDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

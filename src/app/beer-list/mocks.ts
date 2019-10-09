@@ -9,7 +9,7 @@ export const BEERS: Beer[] = [
 		og: 1052,
 		amargor: 'Moderado',
 		price: 110,
-		imagen: 'https://http2.mlstatic.com/caja-x6-cerveza-artesanal-porter-antares-500-ml-12-canillas-D_NQ_NP_692506-MLA31900359222_082019-F.jpg',
+		imagen: './assets/img/porter.png',
 		stock: 10,
 		ofert: true,
 	},{
@@ -20,7 +20,7 @@ export const BEERS: Beer[] = [
 		og: 1090,
 		amargor: 'Medio',
 		price: 130,
-		imagen: 'https://http2.mlstatic.com/cerveza-artesanal-antares-barley-wine-x-und-nunez-D_NQ_NP_768430-MLA31352400657_072019-F.jpg',
+		imagen: './assets/img/barley.png',
 		stock: 20,
 		ofert: false,
 	},{
@@ -31,7 +31,7 @@ export const BEERS: Beer[] = [
 		og: 1062,
 		amargor: 'Bajo',
 		price : 100,
-		imagen : 'https://http2.mlstatic.com/cerveza-artesanal-antares-honey-x-und-nunez-D_NQ_NP_938260-MLA31131374234_062019-F.jpg',
+		imagen : './assets/img/honey.png',
 		stock: 15,
 		ofert: false,
 	}];
