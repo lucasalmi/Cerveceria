@@ -1,0 +1,60 @@
+{
+  "beers" : {
+    "-KbNnvjgxldxzB4lqHPA" : {
+      "name": "Porter",
+	    "alcohol": "5,5",
+      "ibu": 27,
+      "color":"Chocolate",
+      "og": 1052,
+      "amargor": "Moderado",
+      "price":110,
+      "imagen":"../assets/img/porter.png",
+      "stock":10,
+      "ofert": true
+    },
+    "-KbNnyG2JWf9RcCWvIFT" : {
+      "name": "Red Wine",
+      "alcohol": "10",
+      "ibu": 53,
+      "color":"Bronce",
+      "og": 1090,
+      "amargor": "Medio",
+      "price":125,
+      "imagen":"../assets/img/barley.png",
+      "stock":10,
+      "ofert": false
+    },
+    "-KbNoToPmUUs3Xt-cnXE" : {
+      "name": "Honey",
+	    "alcohol": "7,5",
+      "ibu": 22,
+      "color":"Ámbar intenso",
+      "og": 1062,
+      "amargor": "Bajo",
+      "price":130,
+      "imagen":"../assets/img/honey.png",
+      "stock":10,
+      "ofert": false
+    }
+  },
+  "cart" : {
+    "-KbNnvjgxldxzB4lqHPQ" : {
+      "name": "Porter",
+	    "price": 110,
+      "cantidad": 0,
+      "total":0
+    },
+    "-KbNnyG2JWf9RcCWvIFF" : {
+      "name": "Red Wine",
+	    "price": 130,
+	    "cantidad": 0,
+	    "total": 0
+    },
+    "-KbNoToPmUUs3Xt-cnXZ" : {
+      "name": "Honey",
+      "price": 100,
+      "cantidad" :0,
+      "total": 0
+    }
+  }
+}

@@ -29,7 +29,7 @@
 					<button (click) = "masCerveza(beer)">+</button>
 				<span *ngIf = "beer.stock > 0"><button (click) = "menosCerveza (beer)">-</button></span>
 			</td>
-			<td><input type="text" [(ngModel)] = "beer.stock" (keypress)="solonumeros ($event)"></td>
+			<td><input type="text" [(ngModel)] = "beer.stock" (keypress)="solonumeros ($event)"><button *ngIf = "beer.stock > 0" (click) = "addToCart (beer)" >Comprar</button></td>
 			</tr>
 		</tbody>
 	</table>

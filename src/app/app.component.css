@@ -1,5 +1,5 @@
-*{
-    padding: 5% 0;
+app-nav, router-outlet{
+    padding: 0 0 5% 0;
 }
 app-footer {
     display: flex;

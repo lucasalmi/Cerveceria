@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {Beer} from './beer';
 import {BeerDataService } from '../service/beer-data.service';
 
+
 @Component({
   selector: 'app-beer-list',
   templateUrl: './beer-list.component.html',
@@ -40,7 +41,7 @@ export class BeerListComponent implements OnInit {
       event.preventDefault();
     }
   }
-  
+
   ngOnInit() {
   this.beerDataService.getBeers().subscribe(response => {this.beers = [];
      for (const key in response){
